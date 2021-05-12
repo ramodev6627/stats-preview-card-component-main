@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	background-color: hsl(233, 47%, 7%);
+}
+
+.main {
+	background-color: hsl(244, 38%, 16%);
+	width: 90%;
+	max-width: 350px;
+	margin: 2em auto;
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+.img {
+	width: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.img_container {
+	position: relative;
+}
+
+.filter {
+	background-color: hsl(277, 81%, 37%);
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	opacity: 0.4;
+}
+
+.content {
+	text-align: center;
+	margin: 2em;
+}
+
+.header {
+	color: hsl(0, 0%, 100%);
+	font-weight: 700;
+	font-size: 27px;
+	letter-spacing: 0.049em;
+	margin-bottom: 0.5em;
+}
+
+.header span {
+	color: hsl(277, 81%, 37%);
+}
+
+.text {
+	color: hsla(0, 0%, 100%, 0.38);
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.stats {
+	margin-top: 1.5em;
+}
+
+.stat {
+	margin: 1.5em 0;
+}
+
+.stat_number {
+	color: hsl(0, 0%, 100%);
+	font-size: 25px;
+	font-weight: 700;
+	margin-bottom: 6px;
+}
+
+.stat_title {
+	color: hsla(0, 0%, 100%, 0.6);
+	font-size: 13px;
+	letter-spacing: 0.078em;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+@media (min-width: 1100px) {
+	.main {
+		display: flex;
+		max-width: 1000px;
+	}
+
+	.img_container {
+		width: 100%;
+		order: 2;
+	}
+
+	.content {
+		text-align: left;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-right: 3em;
+		order: 1;
+	}
+
+	.text {
+		margin-top: 1.5em;
+	}
+
+	.stats {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
